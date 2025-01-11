@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warehouse Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="h-screen bg-green-800 flex items-center justify-center">
+    <div class="text-center">
+      <!-- Title -->
+      <h1 class="text-gray-200 text-2xl font-semibold mb-8">
+        Warehouse Management System
+      </h1>
+
+      <!-- Login Form Container -->
+      <div class="bg-green-700 rounded-lg p-8 shadow-lg max-w-sm mx-auto">
+        <!-- Username Input -->
+        <div class="mb-4">
+          <label
+            for="username"
+            class="block text-sm font-semibold text-gray-200 mb-1"
+            >Username</label
+          >
+          <input
+            type="text"
+            id="username"
+            class="w-full p-2 rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+            placeholder="Enter your username"
+          />
+        </div>
+
+        <!-- Password Input -->
+        <div class="mb-6">
+          <label
+            for="password"
+            class="block text-sm font-semibold text-gray-200 mb-1"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="w-full p-2 rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+            placeholder="Enter your password"
+          />
+        </div>
+
+        <!-- Login Button -->
+        <button
+          class="w-full bg-green-900 text-white py-2 rounded-md hover:bg-green-800 transition-all font-medium mb-4"
+        >
+          Login
+        </button>
+
+        <!-- Forgot Password Link -->
+        <a
+          href="#"
+          class="block text-sm text-gray-300 hover:text-white underline"
+        >
+          Forgot Password
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

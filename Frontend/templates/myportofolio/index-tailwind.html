@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Jean-sam</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+      defer
+    ></script>
+    <script src="movement.js" defer></script>
+    <style>
+      #Home {
+        background-image: url("AZsrpWkQMy.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <header class="flex flex-wrap justify-between items-center p-4">
+      <div class="flex items-center">
+        <img src="LinuxLogos.png" alt="Logo of Linux Logos" class="h-12" />
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <ul class="flex space-x-6">
+          <li><a href="#Home" class="hover:text-red-500">Home</a></li>
+          <li><a href="#Skills" class="hover:text-red-500">Skills</a></li>
+          <li><a href="#Services" class="hover:text-red-500">Services</a></li>
+          <li><a href="#Projects" class="hover:text-red-500">Projects</a></li>
+          <li><a href="#Contact" class="hover:text-red-500">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="space-x-4 hidden md:flex">
+        <a href="#" class="hover:text-red-500"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" class="hover:text-red-500"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+        <a href="#" class="hover:text-red-500"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#" class="hover:text-red-500"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="hover:text-red-500"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </div>
+      <div class="md:hidden">
+        <a href="#" class="text-red-500"
+          ><img src="menu.png" alt="Icone of menu" class="h-6"
+        /></a>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="Home"
+        class="h-screen flex flex-col justify-center items-center text-center space-y-6"
+      >
+        <p class="text-2xl">I'm</p>
+        <h1 class="text-4xl font-bold">Jean-sam Amétépé</h1>
+        <p class="text-xl">Web Developer</p>
+        <p class="text-xl">Network and System Administrator</p>
+        <p class="text-xl">UX/UI Designer</p>
+        <a
+          href="#Contact"
+          class="bg-red-500 px-6 py-2 rounded text-white hover:bg-red-700"
+          >Contact me</a
+        >
+      </section>
+
+      <section id="Skills" class="py-16">
+        <h2 class="text-center text-3xl font-bold mb-8">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-gray-800 p-6 rounded shadow-lg text-center">
+            <img
+              src="code.png"
+              alt="Icon of coding"
+              class="h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold">Coding</h3>
+            <ul class="mt-4">
+              <li>Python / <span class="text-red-500">Django</span></li>
+              <li>JavaScript / <span class="text-red-500">React JS</span></li>
+            </ul>
+          </div>
+          <div class="bg-gray-800 p-6 rounded shadow-lg text-center">
+            <img
+              src="computer.png"
+              alt="Icon of network"
+              class="h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold">Network & System</h3>
+            <ul class="mt-4">
+              <li>Network & Server Administrator</li>
+            </ul>
+          </div>
+          <div class="bg-gray-800 p-6 rounded shadow-lg text-center">
+            <img
+              src="ui-ux.png"
+              alt="Icon of UI/UX Design"
+              class="h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold">UI/UX Design</h3>
+            <ul class="mt-4">
+              <li>Figma & Adobe XD</li>
+            </ul>
+          </div>
+          <div class="bg-gray-800 p-6 rounded shadow-lg text-center">
+            <img
+              src="network.png"
+              alt="Icon of security system"
+              class="h-12 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold">Security System</h3>
+            <ul class="mt-4">
+              <li>Camera & Biometric Security Systems</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="Services" class="py-16">
+        <h2 class="text-center text-3xl font-bold mb-8">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-800 p-6 rounded shadow-lg">
+            <img
+              src="office.png"
+              alt="Image of dev office"
+              class="rounded mb-4"
+            />
+            <h5 class="text-xl font-semibold mb-4">Title of Services</h5>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis quo quas quos porro minus nemo qui natus.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded shadow-lg">
+            <img
+              src="office.png"
+              alt="Image of dev office"
+              class="rounded mb-4"
+            />
+            <h5 class="text-xl font-semibold mb-4">Title of Services</h5>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis quo quas quos porro minus nemo qui natus.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

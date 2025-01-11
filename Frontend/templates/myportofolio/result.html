@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Jean-sam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Edu+AU+VIC+WA+NT+Hand&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+      defer
+    ></script>
+    <script src="animation.js" defer></script>
+  </head>
+  <body>
+    <header class="headercontent" id="Home">
+      <div class="bylinux">
+        <img src="LinuxLogos.png" alt="Logo of Linux Logos" />
+      </div>
+      <nav class="navcontent" id="navMenu">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="socialmedia">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="iconenave" onclick="toggleNav()">
+        <a href="#"><img src="menu.png" alt="Icone of menu" /></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="presentation">
+        <div class="myname">
+          <p>I'm</p>
+          <p>Jean-sam Amétépé</p>
+          <p>Web Developer</p>
+          <p>Network and System Administrator</p>
+          <p>UX/UI Designer</p>
+          <p id="contactme"><a href="#">Contact me</a></p>
+        </div>
+      </section>
+
+      <section class="skills-component" id="Services">
+        <h2 class="navstep">Skills</h2>
+        <div class="servicescontaint">
+          <div class="servicescomponent">
+            <div><img src="code.png" alt="Icon of coding" /></div>
+            <div class="skills">Coding</div>
+            <ul>
+              <li class="codinglangage">Python / <span>Django</span></li>
+              <li class="codinglangage">JavaScript / <span>React JS</span></li>
+            </ul>
+          </div>
+          <div class="servicescomponent">
+            <div><img src="computer.png" alt="Icon of network" /></div>
+            <div class="skills">Network & System</div>
+            <ul>
+              <li class="codinglangage">Network & Server Administrator</li>
+            </ul>
+          </div>
+          <div class="servicescomponent">
+            <div><img src="ui-ux.png" alt="Icon of UI/UX Design" /></div>
+            <div class="skills">UI/UX Design</div>
+            <ul>
+              <li class="codinglangage">Figma & Adobe XD</li>
+            </ul>
+          </div>
+          <div class="servicescomponent">
+            <div><img src="network.png" alt="Icon of security system" /></div>
+            <div class="skills">Security System</div>
+            <ul>
+              <li class="codinglangage">Camera & Biometric Security Systems</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function toggleNav() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+
+      body {
+        scroll-behavior: smooth;
+        font-family: "Montserrat Alternates", sans-serif, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        background-color: rgb(30, 30, 30);
+        color: #fff;
+        line-height: 1.6;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      /* Header */
+      .headercontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(40, 40, 40);
+        padding: 0 5%;
+        height: 12dvh;
+      }
+      .headercontent .bylinux img {
+        width: 50px;
+        height: 50px;
+      }
+
+      /* Navigation */
+      .navcontent {
+        display: flex;
+        justify-content: center;
+      }
+      .navcontent ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+
+      .navcontent a {
+        text-decoration: none;
+        color: rgb(172, 172, 172);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .navcontent a:hover {
+        color: #797979;
+        letter-spacing: 1px;
+      }
+
+      /* Menu toggle for mobile */
+      .iconenave {
+        display: none;
+      }
+      @media (max-width: 960px) {
+        .navcontent {
+          display: none;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          background: rgb(40, 40, 40);
+          width: 100%;
+          flex-direction: column;
+          padding: 10px;
+        }
+        .navcontent.active {
+          display: flex;
+        }
+        .iconenave {
+          display: flex;
+          cursor: pointer;
+        }
+        .iconenave img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      /* Animation for the elements */
+      window.onload = () => {
+        gsap.from(".headercontent", {
+          duration: 3,
+          y: -40,
+          opacity: 0,
+          stagger: 0.3,
+          elasticity: 1,
+          ease: "elastic.out(1, 0.75)",
+          delay: 0.5,
+        });
+        gsap.from(".myname p", {
+          duration: 1.5,
+          y: 50,
+          opacity: 0,
+          stagger: 0.3,
+        });
+      };
+    </style>
+  </body>
+</html>

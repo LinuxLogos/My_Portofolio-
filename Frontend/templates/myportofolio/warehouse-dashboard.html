@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warehouse Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <aside class="bg-green-800 text-white w-64">
+        <div class="p-4 text-center text-xl font-bold">
+          Warehouse Management System
+        </div>
+        <nav class="mt-6">
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-green-700"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-green-700">Orders</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-green-700">In/out</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-green-700"
+                >In Warehouse</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-green-700">Stats</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-green-700">About</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 p-6 bg-gray-50">
+        <!-- Header -->
+        <header
+          class="flex justify-between items-center bg-green-700 text-white p-4 rounded-md"
+        >
+          <div>
+            <p>Hello $User Last Name</p>
+            <p>Date 20/20/2020</p>
+            <p>Time 10:10</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button class="bg-green-600 hover:bg-green-500 p-2 rounded">
+              +
+            </button>
+            <button class="bg-green-600 hover:bg-green-500 p-2 rounded">
+              Trier par
+            </button>
+            <input
+              type="text"
+              placeholder="Search"
+              class="p-2 rounded bg-white text-black border border-gray-300"
+            />
+          </div>
+        </header>
+
+        <!-- Table -->
+        <section class="mt-6 bg-white p-4 rounded-md shadow">
+          <h2 class="text-xl font-bold mb-4">Liste des Commandes</h2>
+          <table class="w-full border-collapse border border-gray-200 text-sm">
+            <thead>
+              <tr class="bg-green-700 text-white">
+                <th class="border border-gray-200 p-2">Id</th>
+                <th class="border border-gray-200 p-2">Titre de la commande</th>
+                <th class="border border-gray-200 p-2">Date</th>
+                <th class="border border-gray-200 p-2">Magasinier</th>
+                <th class="border border-gray-200 p-2">Articles par bon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Example Rows -->
+              <tr>
+                <td class="border border-gray-200 p-2">
+                  <span class="bg-gray-200 text-black py-1 px-2 rounded"
+                    >1223CMD01RD</span
+                  >
+                </td>
+                <td class="border border-gray-200 p-2">Titre de la commande</td>
+                <td class="border border-gray-200 p-2">01-01-2024</td>
+                <td class="border border-gray-200 p-2">Idrisse</td>
+                <td class="border border-gray-200 p-2 text-center">0</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 p-2">
+                  <span class="bg-green-500 text-white py-1 px-2 rounded"
+                    >1223CMD01RD</span
+                  >
+                </td>
+                <td class="border border-gray-200 p-2">Titre de la commande</td>
+                <td class="border border-gray-200 p-2">27-12-2023</td>
+                <td class="border border-gray-200 p-2">Youssouf</td>
+                <td class="border border-gray-200 p-2 text-center">30</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 p-2">
+                  <span class="bg-red-500 text-white py-1 px-2 rounded"
+                    >1223CMD01RD</span
+                  >
+                </td>
+                <td class="border border-gray-200 p-2">Titre de la commande</td>
+                <td class="border border-gray-200 p-2">18-12-2023</td>
+                <td class="border border-gray-200 p-2">Idrisse</td>
+                <td class="border border-gray-200 p-2 text-center">14</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 p-2">
+                  <span class="bg-yellow-500 text-black py-1 px-2 rounded"
+                    >1223CMD01RD</span
+                  >
+                </td>
+                <td class="border border-gray-200 p-2">Titre de la commande</td>
+                <td class="border border-gray-200 p-2">12-12-2023</td>
+                <td class="border border-gray-200 p-2">Moha</td>
+                <td class="border border-gray-200 p-2 text-center">42</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

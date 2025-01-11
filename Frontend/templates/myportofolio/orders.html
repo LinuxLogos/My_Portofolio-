@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Order Table</title>
+  </head>
+  <body class="bg-gray-100 p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-4">
+      <span class="bg-gray-300 px-4 py-2 rounded-lg text-lg font-semibold"
+        >WMS202410221040</span
+      >
+      <div class="flex space-x-2">
+        <button class="bg-white p-2 rounded-md shadow hover:bg-gray-200">
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+        </button>
+        <button class="bg-white p-2 rounded-md shadow hover:bg-gray-200">
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 12H9m12 0H9m12 0H3"
+            />
+          </svg>
+        </button>
+        <button class="bg-white p-2 rounded-md shadow hover:bg-gray-200">
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 4h16v16H4z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="overflow-x-auto">
+      <table
+        class="table-auto border-collapse border border-gray-300 w-full text-left"
+      >
+        <thead class="bg-green-700 text-white">
+          <tr>
+            <th class="border border-gray-300 px-4 py-2">N*</th>
+            <th class="border border-gray-300 px-4 py-2">Articles</th>
+            <th class="border border-gray-300 px-4 py-2">Description</th>
+            <th class="border border-gray-300 px-4 py-2">Quantité</th>
+            <th class="border border-gray-300 px-4 py-2">Usage</th>
+            <th class="border border-gray-300 px-4 py-2">Secteur</th>
+            <th class="border border-gray-300 px-4 py-2">Remarques</th>
+            <th class="border border-gray-300 px-4 py-2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example row -->
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">1</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td
+              class="border border-gray-300 px-4 py-2 flex justify-center space-x-2"
+            >
+              <button class="text-blue-500 hover:text-blue-700">
+                <svg
+                  class="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 20h9"
+                  />
+                </svg>
+              </button>
+              <button class="text-red-500 hover:text-red-700">
+                <svg
+                  class="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18"
+                  />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <!-- Repeat as needed -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer Buttons -->
+    <div
+      class="flex justify-between items-center mt-4 bg-gray-400 p-4 rounded-lg"
+    >
+      <button
+        class="bg-green-500 text-white px-6 py-2 rounded-lg shadow hover:bg-green-700"
+      >
+        Valider
+      </button>
+      <button
+        class="bg-red-500 text-white px-6 py-2 rounded-lg shadow hover:bg-red-700"
+      >
+        Annuler
+      </button>
+    </div>
+  </body>
+</html>

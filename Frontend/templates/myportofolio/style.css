@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Montserrat Alternates", sans-serif, "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  line-height: 1.6;
+  font-weight: 200;
+  font-style: normal;
+}
+.bylinux {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Rockwell", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bylinux span {
+  color: #9a4a4a;
+  font: 100 "Roboto", sans-serif;
+  font-size: 0.75rem;
+}
+.bylinux strong {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Orbitron", "Courier New", Courier, monospace;
+  font-weight: 900;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+.headercontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  color: #fff;
+  padding: 0 5%;
+  width: 100%;
+  height: 12dvh;
+}
+a:hover {
+  letter-spacing: 1.5px;
+  transform: scale(1);
+}
+
+ul {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.myname :nth-child(2) {
+  font-family: "Bad Script", cursive, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.iconenave {
+  display: none;
+}
+.navcontent {
+  display: flex;
+  font-style: italic;
+}
+
+.navcontent ul,
+.socialicone ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.navcontent a:hover {
+  color: #797979;
+  letter-spacing: 1px;
+}
+
+.socialmedia ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+}
+.socialmedia ul li {
+  list-style: none;
+}
+.socialmedia a {
+  transition: all ease-in-out 0.3s;
+}
+.socialmedia a:hover {
+  color: #828282;
+  scale: 1.05;
+}
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 5%;
+  width: 100%;
+  height: 85dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("tools.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: contain;
+}
+.myname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(23, 23, 23, 0.6), rgba(28, 27, 27, 0.6));
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+}
+.myname p:nth-child(1) {
+  font-size: 2rem;
+  color: #9a4a4a;
+  font-family: "Rockwell", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.myname p:nth-child(6) {
+  margin-top: 7%;
+}
+.myname p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Segoe Print", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.myname a {
+  padding: 10px 20px;
+  background-color: #5e3030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 1.5s;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: "Rockwell", "Roboto", "Arial", sans-serif, "Segoe UI", Tahoma,
+    Geneva, Verdana, sans-serif;
+}
+
+.myname a:hover {
+  background-color: #834040;
+  color: #fff;
+}
+
+.skills-component {
+  background: rgb(34, 34, 34);
+  height: 100%;
+}
+.navstep {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  color: #9a4a4a;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  background-color: #313131;
+  padding: 20px;
+  z-index: 999;
+  width: 200px;
+  height: auto;
+  border-radius: 0 10px 10px 0;
+}
+.servicescontaint {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  padding: 5%;
+}
+
+.servicescomponent {
+  background-color: #313131;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 230px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.servicescomponent img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.servicescomponent:hover {
+  transform: scale(1.05);
+}
+
+.skills {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #9a4a4a;
+  font-family: "Rockwell", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.codinglangage {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.codinglangage span {
+  color: #dac98b;
+}
+.servicescomponent ul {
+  list-style-type: none;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+.servicescomponent li {
+  margin: 5px 0;
+}
+.services {
+  background-color: #5d5d5d;
+  display: flex;
+  flex-direction: column;
+}
+.services-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 2% 0;
+}
+.services-images img {
+  width: 350px;
+  height: 300px;
+  border: #404040 2px solid;
+  border-radius: 10px;
+}
+.title-services {
+  max-width: 500px;
+}
+.title-services h5 {
+  color: #302020;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.description-services {
+  font-size: 1rem;
+  color: #ffffff;
+  font: "Times New Roman", Times, serif;
+}
+.subdescription {
+  font-size: 0.75rem;
+  color: #ffffff;
+  font: "Times New Roman", Times, serif;
+}
+@media (max-width: 960px) {
+  .headercontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .socialmedia {
+    display: none;
+  }
+
+  .iconenave {
+    display: flex;
+  }
+
+  .iconenave img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navcontent ul {
+    display: none;
+  }
+
+  .maincontent {
+    flex-direction: column;
+  }
+
+  .presentation {
+    text-align: center;
+    width: 100%;
+  }
+  .myname {
+    padding: 2%;
+    display: flex;
+    width: 100%;
+    height: 80%;
+  }
+  .myname p:nth-child(1) {
+    color: #9b6c6c;
+    font-size: 1.5rem;
+    font-family: "Rockwell", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .myname p:nth-child(2) {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  #contactme {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+
+  #contactme a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #7d4848;
+    color: #fff;
+  }
+
+  .services {
+    text-align: center;
+    background-color: #515151;
+    padding: 20px;
+  }
+
+  .services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  .servicescontaint {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .servicescomponent {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .servicescomponent img {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+
+  .codinglangage {
+    font-size: 1rem;
+  }
+
+  .servicescomponent ul {
+    padding: 5px;
+  }
+
+  .servicescomponent li {
+    margin: 3px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .headercontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .socialmedia {
+    display: none;
+  }
+
+  .iconenave {
+    display: flex;
+  }
+
+  .iconenave img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navcontent ul {
+    display: none;
+  }
+
+  .navcontent ul li {
+    margin: 8px 0;
+  }
+
+  .maincontent {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .presentation {
+    text-align: center;
+    width: 100%;
+  }
+  .myname {
+    display: flex;
+    width: 100%;
+    height: 80%;
+  }
+  .myname p {
+    font-size: 1rem;
+    margin: 7px 0;
+  }
+  .myname p:nth-child(1) {
+    color: #9b6c6c;
+    font-size: 1.5rem;
+    font-family: "Rockwell", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .myname p:nth-child(2) {
+    font-size: 2rem;
+    margin: 7% 0;
+  }
+
+  #contactme {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 70%;
+  }
+
+  #contactme a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #7d4848;
+    color: #fff;
+  }
+
+  .services {
+    text-align: center;
+    background-color: #515151;
+    padding: 20px;
+  }
+
+  .services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  .servicescontaint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .servicescomponent {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .servicescomponent img {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+
+  .codinglangage {
+    font-size: 1rem;
+  }
+
+  .servicescomponent ul {
+    padding: 5px;
+  }
+
+  .servicescomponent li {
+    margin: 3px 0;
+  }
+}

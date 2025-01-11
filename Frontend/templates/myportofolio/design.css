@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Montserrat Alternates", sans-serif, "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  line-height: 1.6;
+  font-weight: 200;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+a:hover {
+  letter-spacing: 1.5px;
+  transform: scale(1);
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.headercontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  color: #fff;
+  padding: 0 5%;
+  width: 100%;
+  height: 12dvh;
+}
+
+.navcontent ul,
+.socialicone ul {
+  gap: 10px;
+}
+
+.navcontent a:hover {
+  color: #797979;
+  letter-spacing: 1px;
+}
+
+.socialmedia a {
+  transition: all ease-in-out 0.3s;
+}
+.socialmedia a:hover {
+  color: #828282;
+  scale: 1.05;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 5%;
+  width: 100%;
+  height: 85dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.myname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(23, 23, 23, 0.6), rgba(28, 27, 27, 0.6));
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+}
+.myname p:nth-child(1) {
+  font-size: 2rem;
+  color: #9a4a4a;
+  font-family: "Rockwell", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.myname p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Segoe Print", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.myname p:nth-child(6) {
+  margin-top: 7%;
+}
+.myname a {
+  padding: 10px 20px;
+  background-color: #634141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 1.5s;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: "Roboto", "Arial", sans-serif, "Segoe UI", Tahoma, Geneva,
+    Verdana, sans-serif;
+}
+.myname a:hover {
+  background-color: #9a4a4a;
+  color: #fff;
+}
+
+.services {
+  background: rgb(34, 34, 34);
+  height: 100%;
+}
+
+.navstep {
+  margin: 1% auto 20px;
+  display: flex;
+  justify-content: center;
+  color: #9a4a4a;
+  font-size: 1.5rem;
+  background-color: #313131;
+  padding: 20px;
+  z-index: 999;
+  width: 200px;
+  height: auto;
+  border-radius: 0 10px 10px 0;
+}
+
+.servicescontaint {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+
+.servicescomponent {
+  background-color: #313131;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 230px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.servicescomponent img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.servicescomponent:hover {
+  transform: scale(1.05);
+}
+
+.skills {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #9a4a4a;
+  font-family: "Rockwell", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.codinglangage {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.codinglangage span {
+  color: #dac98b;
+}
+.servicescomponent ul {
+  padding: 2px;
+  margin-top: 10px;
+}
+.servicescomponent li {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+  .headercontent {
+    flex-direction: row;
+    padding: 15px;
+  }
+  .socialmedia {
+    display: none;
+  }
+  .iconenave {
+    display: flex;
+  }
+  .navcontent ul {
+    display: none;
+  }
+  .presentation {
+    text-align: center;
+  }
+  .myname {
+    width: 100%;
+    height: 80%;
+  }
+  .myname p {
+    font-size: 1rem;
+    margin: 7px 0;
+  }
+  .myname p:nth-child(1) {
+    color: #9b6c6c;
+    font-size: 1.5rem;
+  }
+  .myname p:nth-child(2) {
+    font-size: 2rem;
+    margin: 7% 0;
+  }
+  #contactme {
+    text-align: center;
+    margin-top: 10%;
+    width: 70%;
+  }
+  #contactme a {
+    font-size: 1.2rem;
+    background-color: #7d4848;
+    color: #fff;
+  }
+  .services {
+    padding: 20px;
+  }
+  .servicescontaint {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .servicescomponent {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  .servicescontaint {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
